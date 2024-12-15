@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Classifier</title>
+    <!-- Gunakan path relatif untuk file CSS dan JavaScript -->
+    <link rel="stylesheet" href="/docs/style.css"> <!-- Ganti dengan path relatif ke file CSS Anda -->
+    <link rel="icon" href="/docs/logo1.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Fruit Prediction Accuracy</h1>
+        <p>Upload an image to see the prediction results:</p>
+        
+        <div class="upload-section">
+            <label for="imageUpload">Choose an image:</label>
+            <input 
+                type="file" 
+                id="imageUpload" 
+                accept="image/jpeg, image/png, image/gif, image/bmp, image/webp">
+            <button id="uploadButton">Upload</button>
+        </div>
+
+        <div class="taskbars">
+            <h2>Prediction Accuracy</h2>
+            <div id="taskbarContainer">
+                <!-- Taskbars will be generated here -->
+            </div>
+        </div>
+
+        <!-- Displaying the 5 conditions -->
+        <div class="conditions">
+            <h3>Image Requirements:</h3>
+            <ul>
+                <li>The background color of the image should be plain white.</li>
+                <li>The fruit image should not be a 2D or 3D illustration; it should be a real photo of the fruit.</li>
+                <li>The image should contain only one fruit, positioned in the center.</li>
+                <li>The fruit should have typical colors and contents that are common for that type of fruit.</li>
+                <li>The fruit should not be rotten or show any signs of spoilage.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Gunakan tag script untuk JavaScript -->
+    <script src="/docs/script.js"></script> <!-- Ganti dengan path relatif ke file JS Anda -->
+</body>
+</html>
